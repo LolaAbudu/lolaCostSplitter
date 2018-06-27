@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Cost Splitter</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	</head>
+	<body>
+		<div style="padding: 0; margin: 0;" class="container-fluid">
+		
+		<div class="costSplitter"> 
+			<h1>COST SPLITTER</h1>
+		</div>
+
+		<div class="row mr-auto">
+			<div class="automatic">
+				<h3>AUTOMATIC</h3>
+		
+		<label style="width: 85%"> How Many Guests?<br>		
+			<input id="guests" type="number" placeholder="Enter Guests"> 
+		</label>  <br> 
+		<label style="width: 85%;"> How Much Is The Total Bill?  <br>
+			<input id="autoBill" min="0.0" type="number" placeholder="Enter Bill"> 
+		</label>  <br>
+		<label>
+			<select id="autoTip">
+				<option disabled selected value="0">Choose Tip Amount</option>
+				<option value="0.1">10% Tip--Bad</option>
+				<option value="0.15">15% Tip--OK</option>
+				<option value="0.2">20% Tip--Good</option>
+				<option value="0.25">25% Tip--Excellent</option>
+			</select>
+		</label>  
+
+		<p id="autoDisplayNames"></p>
+		
+		<div>
+		<label>
+			<input onclick="autoCalculate()" type="button"  class="btn btn-info btn-default" value="Calculate"> 
+		</label> 
+		</div> 
+		
+		<div class="modal fade" id="myModal"></div>
+
+		<label>
+			<input onclick="autoReset()" type="button" value="Reset">
+		</label> 
+			</div>
+		</div>  <br><br>
+		
+		
+		<div class="row mr-auto">
+			<div class="percentage col-3 ml-auto">
+				<h3>PERCENTAGE</h3>
+		
+		<label style="width: 180px;"> How Much Is The Total Bill? <br>		
+			<input id="bill" min="0.0" type="number" placeholder="Enter Bill">  
+		</label>  <br>
+		<label style="width: 180px;"> Enter Percentages And Names  <br>
+			<input id="percents" min="0.0" type="number" placeholder="Enter Percentages"> 
+		</label> <br>
+		<label> 
+			<input id="names" type="text" placeholder="Enter Names"> 
+		</label>  <br> 
+		<label>
+			<select id="tip">
+				<option disabled selected value="0">Choose Tip Amount</option>
+				<option value="0.1">10% Tip--Bad</option>
+				<option value="0.15">15% Tip--OK</option>
+				<option value="0.2">20% Tip--Good</option>
+				<option value="0.25">25% Tip--Excellent</option>
+			</select>
+		</label>
+
+		<p id="addedNames"></p>  
+		<p id="balanceDisplay"></p>
+
+		<label>
+			<input onclick="add()" type="button" class="btn btn-info btn-default" value="Calculate"> 
+		</label>  <br>
+		<label>
+			<input onclick="reset()" type="button" value="Reset">
+		</label>
+			</div>
+		</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+	</html>
