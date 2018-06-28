@@ -1,44 +1,43 @@
 body{
-	background-image: url(Omolola2.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: right top;
+	background-image: url(https://hdbackgroundspot.com//storage/upload/colorful-abstract-background/colorful-abstract-background-2.jpg
+);	background-size: cover;
+	background-size: 800px;
 }
 
 .automatic{
-	border:groove;
+	border:groove absolute;
 	position:absolute;
-	background-color:rgba(255, 255, 255, 0.7);
-	border-radius: 10px;
-	margin-left: 40px;
+	background-color:rgba(100, 200, 255, 0.3);
+	border-radius: 25px;
+	margin-left: 300px;
+	margin-top: 20px;
 	padding-left:15px;
-	padding-right: 15px;
+	padding-right: 5px;
 	padding-top: 20px;
-	padding-bottom: 15px;
+	padding-bottom: 25px;
+	font-family: serif;
+	text-align: center;
 }
 
 .percentage{
-	border:groove;
+	border:groove absolute;
 	position:absolute;
-    background-color:rgba(255, 255, 255, 0.7);  
-    border-radius: 10px;
-    margin-top: -45px;
-    margin-right: 30px; 
-	padding: 5px;
-	padding-right: 90px;
+    background-color:rgba(100, 200, 200, 0.3);  
+    border-radius: 25px;
+    margin-top: -410px;
+    margin-right: 300px; 
+	padding-right: 30px;
+	padding-top: 20px;
+	font-family: serif;
+	text-align: center;	
 }
 
 .costSplitter{
-	background-color: #edd0cb;
-	opacity: 0.7;
-	color: #b73709;
+	opacity: 0.8;
+	color: #41558e;
 	font-style: italic;
 	text-align: center;
-	margin-top: 15px;
-}
-
-h1{
-	font-size: 300px;	
+	margin-top: 70px;
 }
 
 p{
